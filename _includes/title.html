@@ -1,0 +1,15 @@
+{% if site.logo %}
+  <div class="site-logo" role="img" aria-label="{{ site.title }}" style="height: 200px;"></div>
+{% else %}
+  {{ site.title }}
+{% endif %}
+
+
+<style>
+  @media (max-width: 800px) {
+    .site-logo {
+      height: 90px !important;
+      margin: auto;
+    }
+  }
+</style>
